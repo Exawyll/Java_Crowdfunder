@@ -1,0 +1,193 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+h1 {
+	text-align: center;
+}
+
+.navbar {
+	margin-bottom: 0 !important;
+	width: 100%;
+	border-radius: 0px !important;
+}
+
+.navbar-brand {
+	padding: 10px 10px !important;
+}
+
+.logo {
+	height: 100%;
+}
+
+.text-left {
+	background-color: #FFF;
+}
+
+.csharp {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 100px;
+	background-image:
+		url("http://2.bp.blogspot.com/-CaYE8aMOR8I/UPSaUG-KF0I/AAAAAAAAFUo/vt1Ejph9v2Y/s651/java-logo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.symfo {
+	width: 100%;
+	height: 100px;
+	background-image:
+		url("https://cdn3.f-cdn.com/contestentries/1012613/21779278/5905fc2cec40a_thumb900.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 85vh
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	background-color: #f1f1f1;
+	height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+/* 	position: absolute; */
+	width: 100%;
+	bottom: 0;
+}
+
+.footer {
+	height: 60px;
+	background-image: none;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	position: fixed;
+	left: 0pt;
+}
+
+.footer .container-fluid {
+	height: 60px;
+	width: 1000px;
+	margin: auto;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+}
+
+form .required {
+    color: #c00;
+}
+
+form .error {
+    color: #900;
+}
+
+form .success {
+    color: #090;
+}
+
+.project {
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: background-color 1.5s ease-in-out, color 1.5s ease-in-out;
+    z-index: 5;
+}
+
+.project:hover {
+}
+
+.project__transform {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+    height: 100px;
+    contain: content;
+}
+
+.project:hover .project__transform {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+
+.project__title {
+    color: #7ECEFD;
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.project__title--category {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.project__description {
+    opacity: 0;
+    position: relative;
+    transition-duration: 2s;
+    z-index: 20;
+}
+
+.project:hover .project__description {
+    opacity: 1;
+    position: relative;
+    z-index: 20;
+}
+
+/* Add CSS from web template */
+
+.item-photo{display:flex;justify-content:center;align-items:center;border-right:1px solid #f6f6f6;}
+.menu-items{list-style-type:none;font-size:11px;display:inline-flex;margin-bottom:0;margin-top:20px}
+.btn-success{width:100%;border-radius:0;}
+.section{width:100%;margin-left:-15px;padding:2px;padding-left:15px;padding-right:15px;background:#f8f9f9}
+.title-price{margin-top:30px;margin-bottom:0;color:black}
+.title-attr{margin-top:0;margin-bottom:0;color:black;}
+.btn-minus{cursor:pointer;font-size:7px;display:flex;align-items:center;padding:5px;padding-left:10px;padding-right:10px;border:1px solid gray;border-radius:2px;border-right:0;}
+.btn-plus{cursor:pointer;font-size:7px;display:flex;align-items:center;padding:5px;padding-left:10px;padding-right:10px;border:1px solid gray;border-radius:2px;border-left:0;}
+div.section > div {width:100%;display:inline-flex;}
+div.section > div > input {margin:0;padding-left:5px;font-size:10px;padding-right:5px;max-width:18%;text-align:center;}
+.attr,.attr2{cursor:pointer;margin-right:5px;height:20px;font-size:10px;padding:2px;border:1px solid gray;border-radius:2px;}
+.attr.active,.attr2.active{ border:1px solid orange;}
+
+@media (max-width: 426px) {
+    .container {margin-top:0px !important;}
+    .container > .row{padding:0 !important;}
+    .container > .row > .col-xs-12.col-sm-5{
+        padding-right:0 ;    
+    }
+    .container > .row > .col-xs-12.col-sm-9 > div > p{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+    .container > .row > .col-xs-12.col-sm-9 > div > ul{
+        padding-left:10px !important;
+        
+    }            
+    .section{width:104%;}
+    .menu-items{padding-left:0;}
+}
